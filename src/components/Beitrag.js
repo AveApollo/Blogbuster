@@ -79,16 +79,16 @@ export default function Beitrag() {
         <h1 id="centerheader" class="text-black">Account: {currentUser.email}</h1>
         </div>
 
-        <div class="align-middle" id="Beitrag">
+        <div class="align-middle pb-24" id="Beitrag">
             <form onSubmit={handleOnSubmit}>
             <div class="grid grid-cols-1 gap-4 justify-items-center">
             <div >
             <span class="text-gray-700">Titel</span>
-            <input onChange={handleOnChangeTitle}class="shadow appearance-none border rounded w-full py-2 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="titel" type="text" placeholder="Titel" value={newTitle}></input>
+            <input onChange={handleOnChangeTitle}class="shadow appearance-none border rounded w-full py-2 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="titel" type="text" autocomplete="off" placeholder="Titel" value={newTitle}></input>
             </div>
             <div >
             <span class="text-gray-700">Text</span>
-            <textarea onChange={handleOnChange} class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="20" placeholder="Text" value={newMessage}></textarea>
+            <textarea onChange={handleOnChange} class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="20" autocomplete="off" placeholder="Text" value={newMessage}></textarea>
             </div>
             <div >
             <button disabled={loading} class="bg-black hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded" type="submit">
