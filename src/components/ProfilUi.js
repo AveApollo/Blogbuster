@@ -28,14 +28,14 @@ const ProfilUi = ({user = null, db = null}) => {
                 {messages.map(messages => {
                 if(messages.email == currentUser.email){
 
-                return <div class="bg-white rounded-lg p-6 w-104 border-2 border-black">
+                return <div class="bg-white rounded-lg p-6 w-100 border-2 border-black">
                             <div class="flex items-center space-x-6 mb-4">
-                                <div>
+                                <div class="table w-104">
                                     <p class="text-xl text-gray-700 font-normal mb-1 italic">{messages.title}</p>
                                     <p class="text-base text-yellow-400 font-normal">{messages.email}</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="table w-104">
                                 <p class="text-black leading-loose font-normal text-base">{messages.text}</p>
                                 <p id="timefont">{messages.time}</p>
                             </div>
