@@ -10,7 +10,9 @@ import Beitrag from './Beitrag';
 import Profil from './Profil';
 
 
+
 function App() {
+    
 return (
     <Router>
         <AuthProvider>
