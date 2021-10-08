@@ -26,7 +26,7 @@ const Home = ({user = null, db = null}) => {
 
     return(
         <div>
-            <div class="grid grid-cols-1 gap-4">
+            <div class="grid grid-cols-1 gap-4 pb-28">
                 {messages.map(messages => (
 
 
@@ -37,8 +37,8 @@ const Home = ({user = null, db = null}) => {
                           <p class="text-base text-yellow-400 font-normal">{messages.email}</p>
                      </div>
                     </div>
-                <div>
-             <p class="text-black leading-loose font-normal text-base">{messages.text}</p>
+                <div id="wordbreak">
+             <p id="flex" class="text-black leading-loose font-normal text-base">{messages.text}</p>
              <p id="timefont">{messages.time}</p>
                 </div>
                 </div>

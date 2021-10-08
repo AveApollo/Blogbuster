@@ -24,7 +24,7 @@ const ProfilUi = ({user = null, db = null}) => {
     return(
         <div>
             
-            <div class="grid grid-cols-1 gap-4 my-32">
+            <div class="grid grid-cols-1 gap-4 my-32 pb-28">
                 {messages.map(messages => {
                 if(messages.email == currentUser.email){
 
@@ -35,7 +35,7 @@ const ProfilUi = ({user = null, db = null}) => {
                                     <p class="text-base text-yellow-400 font-normal">{messages.email}</p>
                                 </div>
                             </div>
-                            <div class="table w-104">
+                            <div id="wordbreak" class="table w-104">
                                 <p class="text-black leading-loose font-normal text-base">{messages.text}</p>
                                 <p id="timefont">{messages.time}</p>
                             </div>

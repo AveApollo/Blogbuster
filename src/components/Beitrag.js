@@ -43,6 +43,7 @@ export default function Beitrag() {
     const handleOnSubmit = e => {
         e.preventDefault();
 
+        
         var currentdate = new Date();
         var datetime = 
                 currentdate.getHours() + ":"  
@@ -62,6 +63,8 @@ export default function Beitrag() {
 
             })
         }
+        const canVibrate = navigator.vibrate
+        if (canVibrate) navigator.vibrate(600)
         post();
     }
 
